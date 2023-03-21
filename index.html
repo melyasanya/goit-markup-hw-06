@@ -70,6 +70,80 @@
                 <use href="./images/symbol-defs.svg#icon-modal-close"></use>
               </svg>
             </a>
+            <b class="modal-header">
+              Leave your contacts and we will call you back
+            </b>
+            <form name="feedback-form">
+              <div
+                role="group"
+                aria-labelledby="feedback-form"
+                class="feedback-group"
+              >
+                <div>
+                  <label class="modal-label" for="name">Name</label>
+                  <div class="modal-form-wrapper">
+                    <input
+                      class="modal-input"
+                      type="text"
+                      id="name"
+                      autofocus
+                    />
+                    <svg class="modal-form-icon">
+                      <use href="./images/symbol-defs.svg#icon-name"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <label class="modal-label" for="phone">Phone</label>
+                  <div class="modal-form-wrapper">
+                    <input class="modal-input" type="tel" id="phone" />
+                    <svg class="modal-form-icon">
+                      <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <label class="modal-label" for="email">Email</label>
+                  <div class="modal-form-wrapper">
+                    <input class="modal-input" type="email" id="email" />
+                    <svg class="modal-form-icon">
+                      <use href="./images/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="modal-comments">
+                  <label class="modal-label" for="comment">Comment</label>
+                  <textarea
+                    class="modal-input modal-input-comments"
+                    name="comment"
+                    id="comment"
+                    cols="30"
+                    rows="10"
+                    placeholder="Text input"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="conditions-wrapper">
+                  <input
+                    class="checkbox visually-hidden"
+                    type="checkbox"
+                    name="privacy-policy"
+                    id="privacy-policy"
+                  />
+                <label class="custom-checkbox" for="privacy-policy">
+                 <div class="conditions-line">
+                  <div class="conditions-icon">
+                    <svg class="policy-icon">
+                      <use href="./images/symbol-defs.svg#icon-policy"></use>
+                    </svg></div
+                >
+                <p class="policy-text">
+                  I accept the terms and conditions of the </label>
+                  <a class="policy-link" href="">Privacy Policy</a>
+                </p>
+              </div>
+              </div>
+            </form>
           </div>
         </div>
         <div class="container hero-container">
@@ -643,6 +717,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-right">
+          <p class="footer-social">Subscribe</p>
+          <label class="visually-hidden" for="email">email</label>
+          <div class="footer-forms">
+            <button class="footer-btn" type="submit">
+              <span class="footer-right-text">Subscribe</span>
+              <svg class="footer-right-icon">
+                <use href="./images/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </button>
+            <input
+              class="footer-input"
+              type="text"
+              id="email"
+              placeholder="E-mail"
+              name="email"
+            />
+          </div>
         </div>
       </div>
     </footer>
