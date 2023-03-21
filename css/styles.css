@@ -219,6 +219,8 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #0000001a;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon-cont:hover,
@@ -291,6 +293,7 @@ address {
 }
 
 .feedback-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -356,6 +359,15 @@ address {
 .modal-input-comments {
   height: 120px;
   padding-left: 16px;
+  padding-top: 8px;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .conditions-wrapper {
@@ -405,6 +417,30 @@ address {
 .conditions-line {
   display: flex;
   flex-direction: row;
+  gap: 8px;
+}
+
+.modal-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: 168px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--third-color);
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
 }
 
 /* about us */
@@ -621,7 +657,7 @@ address {
   border-radius: 4px;
   margin-right: 24px;
 }
-::placeholder {
+.footer-input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -643,6 +679,7 @@ address {
   gap: 16px;
   border-radius: 4px;
   color: var(--third-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn:hover,
