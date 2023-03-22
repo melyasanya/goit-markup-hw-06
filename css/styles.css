@@ -208,6 +208,7 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 
 .close-icon-cont {
@@ -226,6 +227,7 @@ address {
 .close-icon-cont:hover,
 .close-icon-cont:focus {
   background: #404bbf;
+  cursor: pointer;
 }
 .close-icon-cont:focus,
 .close-icon-cont:hover .close-icon {
@@ -297,8 +299,6 @@ address {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-right: 24px;
-  margin-left: 24px;
 }
 .modal-label {
   margin-bottom: 4px;
@@ -338,7 +338,6 @@ address {
 .modal-header {
   display: flex;
   justify-content: center;
-  margin-top: 72px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -354,6 +353,7 @@ address {
   width: 360px;
   height: 40px;
   padding-left: 38px;
+  resize: none;
 }
 
 .modal-input-comments {
@@ -369,11 +369,19 @@ textarea::placeholder {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
+textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #000;
+}
 
 .conditions-wrapper {
   display: flex;
   flex-direction: row;
-  margin: 16px 24px 24px 24px;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .policy-text {
@@ -441,6 +449,7 @@ textarea::placeholder {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* about us */
@@ -656,6 +665,12 @@ textarea::placeholder {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 24px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 .footer-input::placeholder {
   font-weight: 400;
@@ -663,7 +678,6 @@ textarea::placeholder {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--third-color);
-  padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
   opacity: 0.8;
